@@ -17,7 +17,7 @@ This article shows you a list of functions and their descriptions to help get yo
 | [where](where-operator.md)                      | Filters on a specific predicate           | `T | where Predicate`                         |
 | [where contains/has](where-operator.md)        | `Contains`: Looks for any substring match <br> `Has`: Looks for a specific word (better performance)  | `T | where col1 contains/has "[search term]"`|
 | [search](search-operator.md)                    | Searches all columns in the table for the value | `[TabularSource |] search [kind=CaseSensitivity] [in (TableSources)] SearchPredicate` |
-| [take](take-operator.md)                        | Returns the specified number of records. Use to test a query<br>**_Note_**: `take` and `limit` are synonyms. | `T | take NumberOfRows` |
+| [take](take-operator.md)                        | Returns the specified number of records from the beginning of the result set. Use to test a query<br>** | `T | take NumberOfRows` |
 | [case](case-function.md)                        | Adds a condition statement, similar to if/then/elseif in other systems. | `case(predicate_1, then_1, predicate_2, then_2, predicate_3, then_3, else)` |
 | [distinct](distinct-operator.md)                | Produces a table with the distinct combination of the provided columns of the input table | `distinct [ColumnName], [ColumnName]` |
 | **Date/Time**                                   |**_Operations that use date and time functions_**               |                          |
